@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Our Services</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <li><a href="home.html" class="link">WeeWeb</a></li>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="home.html" class="link active">Home</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="services-content">
+        <h1>Our Services</h1>
+        <div class="service">
+            <h2>Web Development</h2>
+            <p>We offer custom web development solutions tailored to your needs. From simple websites to complex web applications, we've got you covered.</p>
+            <button class="btn" onclick="showDetails('web-development')">Learn More</button>
+            <div id="web-development-details" class="details">
+                <!-- Additional details about web development service -->
+            </div>
+        </div>
+        <div class="service">
+            <h2>Our System</h2>
+            <p>Our system provides website develpment based on user prompts.</p>
+            <div id="graphic-design-details" class="details">
+                <!-- Additional details about graphic design service -->
+            </div>
+        </div>
+        <!-- Add more services as needed -->
+    </div>
+</div>
+
+<script>
+    // Function to show additional details for a service
+    function showDetails(service) {
+        var details = document.getElementById(service + '-details');
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>

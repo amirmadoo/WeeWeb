@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <li><a href="home.html" class="link">WeeWeb</a></li>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="home.html" class="link active">Home</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="about-content">
+        <h1>About Us</h1>
+        <div class="about-section">
+            <h2>Our Group</h2>
+            <p>WE are a group of 4 members.</p>
+            <div id="history-details" class="details">
+                <!-- Detailed history of the company -->
+            </div>
+        </div>
+        <div class="about-section">
+            <h2>Our Team</h2>
+            <p>We have a dedicated team of professionals who are passionate about what they do. Meet the faces behind our project.</p>
+            <div id="team-details" class="details">
+                <div class="team-card-container">
+                    <div class="team-card">
+                      <img src="images/f1.jpg" alt="Team Member 1">
+                      <h3>Amir Madoo</h3>
+                      <p>Developer</p>
+                      <p>Passionate computer engineering student with a drive to succeed and an unwavering commitment to excellence.</p>
+                      <ul>
+                        <li><a href="https://www.linkedin.com/in/amirmadoo10/" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="mailto:amirmadooo4590gmail.com" target="_blank"><i class="bx bx-mail-send"></i></a></li>
+                      </ul>
+                    </div>
+                    
+                    <!-- Add more team member cards as needed -->
+                  </div>
+        </div>
+        <!-- Add more sections about the company as needed -->
+    </div>
+</div>
+
+<script>
+    // Function to show detailed history of the company
+    function showHistory() {
+        var historyDetails = document.getElementById('history-details');
+        historyDetails.style.display = historyDetails.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Function to show team members
+    function showTeam() {
+        var teamDetails = document.getElementById('team-details');
+        teamDetails.style.display = teamDetails.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+</body>
+</html>
+
+

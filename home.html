@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>WeeWeb</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <li ><a href="home.html" class="link">WeeWeb</a></li>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="home.html" class="link active">Home</a></li>
+                <li><a href="services.html" class="link">Services</a></li>
+                <li><a href="about.html" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="index.html"><button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button></a>
+            <a href="index.html"><button class="btn" id="registerBtn" onclick="register()">Sign Up</button></a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+<!-- Add new widgets here -->
+<div class="panel">
+    <button id="button1" class="btn" draggable="true" ondragstart="drag(event)">Button</button>
+    <!-- New widget: Header -->
+    <h2 id="headerWidget" class="widget" draggable="true" ondragstart="drag(event)">Header</h2>
+    <!-- New widget: Panel -->
+    <div id="panelWidget" class="widget" draggable="true" ondragstart="drag(event)">
+        <h3>Panel Title</h3>
+        <p>This is a panel widget.</p>
+    </div>
+    <!-- New widget: Image -->
+    <img id="imageWidget" src="image.jpg" class="widget" draggable="true" ondragstart="drag(event)" alt="Image">
+    <!-- New widget: Paragraph -->
+    <p id="paragraphWidget" class="widget" draggable="true" ondragstart="drag(event)">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<!-- Drop space for placing widgets -->
+<div class="drop-space" style="background-color: white;" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <!-- Space for dropped widgets -->
+</div>
+
+<!-- Download button -->
+<button id="downloadBtn">Download Source Code</button>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
